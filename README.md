@@ -4,12 +4,19 @@ This simple collection of bash scripts run queries against our thanos
 to retrive some kafka topics and display them.
 
 
-usage : SHELL COMMAND PARAMS
-    where:
-      SHELL   = $0
-      COMMAND = urp, do, ums, bs, olp, all, show
-         all  : run all commands (e.g. SHELL all bkp15)
-         show : display brokers and clusters only (e.g. SHELL show erding)
-      PARAMS  = the command parameters, usually the cluster name or:
-       erding : to check all erding clusters (e.g. SHELL urp erding)
-        cloud : to check all PaaS clusters (e.g. SHELL urp cloud)
+### usage : <i>SHELL COMMAND PARAMS</i>
+
+where:
+
+* SHELL   = $0
+* COMMAND = urp, do, ums, bs, olp, all, show
+
+    * <tt>all</tt> : run all commands (e.g. <i>SHELL all bkp15</i>)
+
+    * <tt>show</tt> : display brokers and clusters only (e.g. <i>SHELL show erding</i>)
+
+* PARAMS  = the command parameters, usually the cluster name or:
+
+    * <tt>erding</tt> : to check all erding clusters (e.g. <i>SHELL urp erding</i>)
+
+    * <tt>cloud</tt> : to check all PaaS clusters (e.g. <i>SHELL urp cloud</i>)
